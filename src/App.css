@@ -70,7 +70,7 @@ header {
   margin-bottom: 3rem;
 }
 
-.wrapper .image {
+.wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -126,4 +126,36 @@ header {
 .character-content .text-grey {
   color: rgb(158, 158, 158);
   padding-bottom: 0.5rem;
+}
+
+::selection {
+  color: rgb(255, 152, 0);
+  background-color: rgb(32, 35, 41);
+}
+
+@media (max-width: 1125px) {
+  .flexContainer {
+    display: grid;
+    grid-template-columns: 100% auto;
+  }
+}
+
+@media (max-width: 660px) {
+  .wrapper {
+    flex-direction: column;
+    height: initial;
+    width: 100%;
+  }
+
+  .wrapper img {
+    height: 300px;
+  }
+
+  .wrapper .section:first-child {
+    justify-content: flex-start;
+  }
+
+  .wrapper .section:last-child {
+    justify-content: flex-end;
+  }
 }
