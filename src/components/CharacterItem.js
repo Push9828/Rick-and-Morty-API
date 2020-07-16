@@ -1,6 +1,28 @@
 import React from "react";
 
 const CharacterItem = ({ character }) => {
+  const classAlive = {
+    background: "green",
+  };
+
+  const classDead = {
+    background: "red",
+  };
+
+  const classUnknown = {
+    background: "grey",
+  };
+
+  let className = null;
+
+  if (character.status === "Alive") {
+    className = classAlive;
+  } else if (character.status === "Dead") {
+    className = classDead;
+  } else if (character.status === "unknown") {
+    className = classUnknown;
+  }
+
   return (
     <div className="wrapper">
       <div className="character-img">
@@ -11,7 +33,7 @@ const CharacterItem = ({ character }) => {
         <div className="section">
           <h2> {character.name}</h2>
           <span className="status">
-            <span className="status-icon"></span>
+            <span className="status-icon" style={className}></span>
             {character.status} - {character.species}
           </span>
 
