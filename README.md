@@ -2,7 +2,7 @@
 
 <p align="center">This Website is made with  ❤️ <strong>React </strong></p>
 
-##Live Demo
+## Live Demo
 
 [![demo](https://img.shields.io/badge/demo-Hit_Me-orange)](https://rick-and-morty-api-kohl.vercel.app/)
 
