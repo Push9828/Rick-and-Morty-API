@@ -2,6 +2,10 @@
 
 <p align="center">This Website is made with  ❤️ <strong>React </strong></p>
 
+##Live Demo
+
+[![demo](https://img.shields.io/badge/demo-Hit_Me-orange)](https://rick-and-morty-api-kohl.vercel.app/)
+
 ## Code Style
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
